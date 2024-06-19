@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-     return HttpResponse("Hello, world!")
+     return HttpResponse("<h1 style=\"color:blue\">Hello, world!</h1>")
 
 def brian(request):
     return HttpResponse("Hello, Brian!")
