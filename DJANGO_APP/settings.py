@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'DJANGO_PROJECT',
+    'NEW_YEAR',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
