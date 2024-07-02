@@ -13,5 +13,6 @@ After installing Django, we can go through the steps of creating a new Django pr
 + <kbd> settings.py</kbd> contains some important configuration settings for our new project. There are some default settings, but we may wish to change some of them from time to time.
 + <kbd> urls.py</kbd> contains directions for where users should be routed after navigating to a certain URL.
 4. Start the project by running `python manage.py runserver`.
+5. To create an application, we run `python manage.py startapp APP_NAME`.
 
 
