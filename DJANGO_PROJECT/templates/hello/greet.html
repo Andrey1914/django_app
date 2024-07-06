@@ -1,10 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Hello</title>
+    <script src="{% static 'hello/greet.js' %}"></script>
   </head>
   <body>
-    <h1>Hello, {{ name }}!</h1>
+    <h1>Greeting Page!</h1>
+    <form>
+      <input autofocus id="name" placeholder="Name" type="text" />
+      <input type="submit" />
+    </form>
     <a href="{% url 'hello:index' %}">Go Back</a>
   </body>
 </html>

@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Select</title>
+    <script src="{% static 'hello/select.js' %}"></script>
+  </head>
+  <body>
+    <h1 id="hello">Hello, Everyone!</h1>
+
+    <select>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="grey">Grey</option>
+    </select>
+
+    <a href="{% url 'hello:index' %}">Go Back</a>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Count</title>
+    <script src="{% static 'hello/counter.js' %}"></script>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <h2>0</h2>
+    <button>Counter</button>
+    <a href="{% url 'hello:index' %}">Go Back</a>
+  </body>
+</html>

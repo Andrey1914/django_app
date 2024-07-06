@@ -9,16 +9,28 @@ from django.http import HttpResponse
 def index(request):
     return render(request, "hello/index.html")
 
-def brian(request):
-    return HttpResponse("Hello, Brian!")
+def count(request):
+    return render(request, "hello/count.html")
 
-def david(request):
-    return HttpResponse("Hello, David!")
+def greet(request):
+    return render(request, "hello/greet.html")
+
+def colors(request):
+    return render(request, "hello/colors.html")
+
+def select(request):
+    return render(request, "hello/select.html")
+
+def tasks(request):
+    return render(request, "hello/tasks.html")
+
+def currency(request):
+    return render(request, "hello/currency.html")
 
 # def greet(request, name):
 #     return HttpResponse(f"Hello, {name.capitalize()}!")
 
-def greet(request, name):
-    return render(request, "hello/greet.html", {
-        "name": name.capitalize()
-    })
+# def greet(request, name):
+#     return render(request, "hello/greet.html", {
+#         "name": name.capitalize()
+#     })

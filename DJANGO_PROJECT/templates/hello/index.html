@@ -1,10 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Hello</title>
+    <script src="{% static 'hello/hello.js' %}"></script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <a href="{% url 'tasks:index' %}">Go to Tasks</a>
+    <h1>Hello, Andrey!</h1>
+
+    <button>Say Hi!</button>
+
+    <ul>
+      <li>
+        <a href="{% url 'tasks:index' %}">Go To Tasks App</a>
+      </li>
+      <li>
+        <a href="{% url 'hello:count' %}">Go To Count Page</a>
+      </li>
+      <li>
+        <a href="{% url 'hello:greet' %}">Go To Greet Page</a>
+      </li>
+      <li>
+        <a href="{% url 'hello:colors' %}">Go To Colors Page</a>
+      </li>
+      <li>
+        <a href="{% url 'hello:tasks' %}">Go To Tasks Page</a>
+      </li>
+      <li>
+        <a href="{% url 'hello:currency' %}">Go To Currency Page</a>
+      </li>
+    </ul>
   </body>
 </html>
