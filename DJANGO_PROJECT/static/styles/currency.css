@@ -1,0 +1,30 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+form {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.container {
+  width: 236px;
+  margin: 0 auto;
+}
+
+.result {
+  padding-bottom: 20px;
+}
+
+.back-link {
+  padding: 20px 0;
+}

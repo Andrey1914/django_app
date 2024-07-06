@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
 
 # Create your views here.
 
@@ -25,7 +26,10 @@ def tasks(request):
     return render(request, "hello/tasks.html")
 
 def currency(request):
-    return render(request, "hello/currency.html")
+    context = {
+        'CURRENCY_ACCESS_KEY': settings.CURRENCY_ACCESS_KEY
+    }
+    return render(request, "hello/currency.html", context)
 
 # def greet(request, name):
 #     return HttpResponse(f"Hello, {name.capitalize()}!")

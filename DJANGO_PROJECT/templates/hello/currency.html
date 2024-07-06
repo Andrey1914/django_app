@@ -4,9 +4,23 @@
 <html lang="en">
   <head>
     <title>Currency Exchange</title>
-    <script src="{% static 'hello/currency.js' %}"></script>
+    <script src="{% static 'hello/currency.js' %}">
+      const accessKey = "{{ CURRENCY_ACCESS_KEY }}";
+    </script>
+    <link rel="stylesheet" href="{% static 'styles/currency.css' %}" />
   </head>
   <body>
-    <a href="{% url 'hello:index' %}">Go Back</a>
+    <section class="section">
+      <div class="container">
+        <h1>Currency Exchange</h1>
+
+        <form>
+          <input id="currency" placeholder="Currency" type="text" />
+          <input type="submit" value="Convert" />
+        </form>
+        <div class="result" id="result"></div>
+        <a class="back-link" href="{% url 'hello:index' %}">Go Back</a>
+      </div>
+    </section>
   </body>
 </html>
