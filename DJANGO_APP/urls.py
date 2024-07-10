@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include("DJANGO_PROJECT.urls")),
     path('newyear/', include("NEW_YEAR.urls")),
-    path('tasks/', include("TASKS.urls"))
+    path('tasks/', include("TASKS.urls")),
+    path('singlepageapp/', include("SINGLE_PAGE_APP.urls"))
+    
 ]

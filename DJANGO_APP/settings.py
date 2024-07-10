@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'DJANGO_PROJECT',
     'NEW_YEAR',
     'TASKS',
+    'SINGLE_PAGE_APP',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
