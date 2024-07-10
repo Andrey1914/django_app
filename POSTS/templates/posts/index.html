@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Posts</title>
+    <style>
+      .post {
+        background-color: #77dd11;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      body {
+        padding-bottom: 50px;
+      }
+    </style>
+    <script scr="{% static 'posts/posts.js' %}"></script>
+  </head>
+  <body>
+    <h1>Posts Page</h1>
+    <a href="{% url 'hello:index' %}">Go Back</a>
+    <a href="{% url 'singlepageapp:scroll' %}">Go To Scroll Page</a>
+    <div id="posts"></div>
+  </body>
+</html>

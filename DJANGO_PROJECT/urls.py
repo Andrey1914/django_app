@@ -10,10 +10,5 @@ urlpatterns = [
     path("select", views.select, name="select"),
     path("tasks", views.tasks, name="tasks"),
     path("currency", views.currency, name="currency"),
-    
-    
-    
-    
-    
     # path("<str:name>", views.greet, name="greet"),
 ]

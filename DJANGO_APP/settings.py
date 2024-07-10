@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'NEW_YEAR',
     'TASKS',
     'SINGLE_PAGE_APP',
+    'POSTS',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
