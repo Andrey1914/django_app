@@ -20,6 +20,9 @@ def posts(request):
 
     # Artificially delay speed of response
     time.sleep(1)
+    
+     # Log data to check
+    print(f"Generated posts from {start} to {end}")
 
     # Return list of posts
     return JsonResponse({

@@ -22,9 +22,10 @@ function load() {
   counter = end + 1;
 
   // Get new posts and add posts
-  fetch(`/posts?start=${start}&end=${end}`)
+  fetch(`/posts/?start=${start}&end=${end}`)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       data.posts.forEach(add_post);
     });
 }
